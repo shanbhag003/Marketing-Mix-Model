@@ -36,6 +36,7 @@ def build_sales_model(df):
     y_pred = lr.predict(X_test)
 
     a = lr.coef_
+    c = lr.intercept_
     Coefficients = {"TV Coefficient": a[0], "Radio Coefficient": a[1], "Newspaper Coefficient": a[2]}
 
     #Optimization (Initializing the model)
@@ -48,7 +49,7 @@ def build_sales_model(df):
 
     #Defining the objective function
     sales_model += Coefficients["TV Coefficient"] * TV + Coefficients["Radio Coefficient"] * radio + Coefficients[
-        "Newspaper Coefficient"] * newspaper
+        "Newspaper Coefficient"] * newspaper + c
 
     #Defining objective constraints
     sales_model += TV <= parameter_TV_constraint
