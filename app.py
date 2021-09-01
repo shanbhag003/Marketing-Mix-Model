@@ -11,8 +11,6 @@ import seaborn as sns
 #Sets the layout to full width
 st.set_page_config(layout= "wide")
 
-image = Image.open("logo.png")
-st.image(image)
 
 #Web App Title
 st.title('''
@@ -140,6 +138,7 @@ if uploaded_file is not None:
     data = lr.coef_
     columns = X.columns
     df1 = pd.DataFrame(data,columns)
+    
     #Plotting coefficients to check the behaviour of each medium
     st.header('**Influence of Advertisement Mediums**')
     st.bar_chart(df1)
