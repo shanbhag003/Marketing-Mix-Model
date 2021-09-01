@@ -133,13 +133,13 @@ def build_units_model(Optimized_TV_budget,Optimized_radio_budget,Optimized_newsp
 #---------------------------------------------------------#
 
 #Sidebar - Specify Parameter settings
-with st.sidebar.subheader("1. Sales Model Constraints"):
+with st.sidebar.subheader("1. Budgetory Constraints"):
     parameter_TV_constraint = st.sidebar.slider('TV advertising Budget (in thousand rupees)', 0, 1000, 100, 1)
     parameter_radio_constraint = st.sidebar.slider('Radio advertising Budget (in thousand rupees)', 0, 1000, 100, 1)
     parameter_newspaper_constraint = st.sidebar.slider('Newspaper advertising Budget (in thousand rupees)', 0, 1000, 100, 1)
     parameter_total_budget_constraint = st.sidebar.slider('Total advertising Budget (in thousand rupees)', 0, 1000, 100, 1)
 
-with st.sidebar.subheader("2. Units Model Constraints"):
+with st.sidebar.subheader("2. Quantity Constraints"):
     parameter_TV_units_constraint = st.sidebar.slider('Per unit cost of TV ad (in thousand rupees)', 0, 1000, 100, 1)
     parameter_radio_units_constraint = st.sidebar.slider('Per unit cost of radio ad (in thousand rupees)', 0, 1000, 100, 1)
     parameter_newspaper_units_constraint = st.sidebar.slider('Per unit cost of newspaper ad (in thousand rupees)', 0, 1000, 100, 1)
