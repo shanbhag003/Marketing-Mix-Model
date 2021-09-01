@@ -11,8 +11,7 @@ import seaborn as sns
 #Sets the layout to full width
 st.set_page_config(layout= "wide")
 
-image = Image.open("logo.png")
-st.image(image)
+
 
 #Web App Title
 st.title('''
