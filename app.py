@@ -142,6 +142,8 @@ if uploaded_file is not None:
     data = lr.coef_
     columns = X.columns
     df1 = pd.DataFrame(data,columns)
+    
+    #Plotting coefficients to check the behaviour of each medium
     with col2:
         col2.header('**Influence of Advertisement Mediums**')
         st.bar_chart(df1)
@@ -150,12 +152,4 @@ else:
     st.info("Awaiting for CSV file to be uploaded.")
 
 
-
-
-
-
-
-
 #-------------------------------------------------------------#
-
-    #Plotting coefficients to check the behaviour of each medium
