@@ -138,7 +138,7 @@ if uploaded_file is not None:
     data = [lr.coef_]
     df1 = pd.DataFrame(data,columns = X.columns)
     #Plotting coefficients to check the behaviour of each medium
-    st.header('**Influence of Advertisement Mediums**')
+    st.header('**Influence of Advertisement Mediums on Sales**')
     st.bar_chart(df1)
 
 else:
