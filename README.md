@@ -1,6 +1,6 @@
 # Marketing-Mix-Model
 
-In order to maximize sales, every company sets aside a budget for marketing and advertising. There are a variety of metrics that can be used to allocate resources. Market Mix Modelling (MMM) is a technique which helps in quantifying the impact of several marketing inputs on Sales. MMM uses the Regression technique and the analysis performed through Regression is further used for extracting insights. 
+In order to maximize sales, every company sets aside certain budget for marketing and advertising. There are a variety of metrics that can be used to allocate resources. Market Mix Modelling (MMM) is a technique which helps in quantifying the impact of several marketing inputs on Sales. MMM uses the Regression technique and the analysis performed through Regression is further used for extracting insights. 
 
 There are 2 levels of modelling for the proposed solution as described below:
 
